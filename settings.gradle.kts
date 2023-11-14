@@ -14,5 +14,5 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "SlackCloneMultiplatform"
-include(":app")
+include(":androidApp")
  
