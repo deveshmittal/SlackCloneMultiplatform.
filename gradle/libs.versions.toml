@@ -10,12 +10,15 @@ material = "1.1.0"
 junit = "5.10.0"
 junitext = "1.1.5"
 espresso = "3.5.1"
+lifecycle = "2.6.2"
 [libraries]
 appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat"}
 coreLibraryDesugaring = { module = "com.android.tools:desugar_jdk_libs", version.ref = "desugar" }
 androidx_core = { module = "androidx.core:core-ktx", version.ref = "androidx" }
 material = { module = "com.google.android.material:material", version.ref = "material"}
-junit = { module = "junit:junit", version.ref = "junit" }
+junit = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit" }
+junit_engine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit" }
+lifecycle = {module = "androidx.lifecycle:lifecycle-livedata", version.ref = "lifecycle"}
 junit_ext = { module = "androidx.test.ext:junit", version.ref = "junitext" }
 espresso = { module = "androidx.test.espresso:espresso-core", version.ref = "espresso" }
 [plugins]

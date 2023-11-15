@@ -44,7 +44,9 @@ dependencies {
     implementation(libs.androidx.core)
     implementation(libs.appcompat)
     implementation(libs.material)
+    implementation(libs.lifecycle)
     testImplementation(libs.junit)
+    testRuntimeOnly(libs.junit.engine)
     androidTestImplementation(libs.junit.ext)
     androidTestImplementation(libs.espresso)
 }
