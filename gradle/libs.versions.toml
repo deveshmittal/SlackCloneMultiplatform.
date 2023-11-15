@@ -4,10 +4,20 @@ kotlin = "1.9.0"
 ktlint = "11.6.1"
 ksp = "1.9.0-1.0.11"
 appcompat = "1.6.1"
+desugar = "2.0.4"
+androidx = "1.9.0"
+material = "1.1.0"
+junit = "5.10.0"
+junitext = "1.1.5"
+espresso = "3.5.1"
 [libraries]
-appcompat = { module = "android.appcompat:appcompat", version.ref = "appcompat"}
-
-
+appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat"}
+coreLibraryDesugaring = { module = "com.android.tools:desugar_jdk_libs", version.ref = "desugar" }
+androidx_core = { module = "androidx.core:core-ktx", version.ref = "androidx" }
+material = { module = "com.google.android.material:material", version.ref = "material"}
+junit = { module = "junit:junit", version.ref = "junit" }
+junit_ext = { module = "androidx.test.ext:junit", version.ref = "junitext" }
+espresso = { module = "androidx.test.espresso:espresso-core", version.ref = "espresso" }
 [plugins]
 android_application = { id = "com.android.application", version.ref = "agp" }
 android_library = { id = "com.android.library", version.ref = "agp" }
